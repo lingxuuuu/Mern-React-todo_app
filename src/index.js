@@ -1,17 +1,20 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDOM from 'react-dom'; //ReateDOM library to render
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+import App from './App'; // ./ meaning from the current directory, looking for a function called App.js
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+/*function MyApp() {
+    return (
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    )
+}
+
+               //what to render ,  //where to render
+ReactDOM.render( <MyApp />, document.getElementById('root'));  //<MyApp /> is a functional component, it is a self-closing tag here. */
+
+ReactDOM.render ( <App />, document.getElementById('root'));
